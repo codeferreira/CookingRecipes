@@ -1,8 +1,18 @@
 import React from 'react';
-import {View} from 'react-native';
 
-// import { Container } from './styles';
+import {Container, CardImage, CardContainer} from './styles';
+
+import Header from '../../components/Header';
 
 export default function Main() {
-  return <View style={{backgroundColor: '#FAFAFA', flex: 1}} />;
+  return (
+    <Container>
+      <Header title="Popular Recipes" />
+      <CardImage>
+        <CardContainer />
+      </CardImage>
+      <CardImage />
+      <CardImage />
+    </Container>
+  );
 }
