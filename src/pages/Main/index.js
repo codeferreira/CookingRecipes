@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import {Container, CardImage, CardContainer} from './styles';
 
 import Header from '../../components/Header';
+import light from '../../styles/themes/light';
 
 export default function Main() {
   return (
@@ -16,3 +18,7 @@ export default function Main() {
     </Container>
   );
 }
+
+Main.navigationOptions = {
+  tabBarIcon: () => <Icon name="layers" size={30} color={light.primary} />,
+};
